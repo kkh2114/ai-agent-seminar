@@ -520,11 +520,11 @@ ul { list-style: none; }
 .ps-quote-box {
   display: flex;
   align-items: center;
-  gap: 28px;
+  justify-content: center;
   background: var(--dark-2);
   border: 1px solid rgba(201,168,76,0.18);
   border-radius: var(--radius-xl);
-  padding: 36px 52px;
+  padding: 44px 52px;
   max-width: 720px;
   width: 100%;
   position: relative;
@@ -537,29 +537,24 @@ ul { list-style: none; }
   background: linear-gradient(135deg, rgba(201,168,76,0.06) 0%, transparent 60%);
   pointer-events: none;
 }
-.ps-quote-mark {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  flex-shrink: 0;
-  line-height: 1;
-}
-.ps-quote-mark span {
-  font-size: 36px;
-  font-family: Georgia, serif;
+.ps-quote-icon {
+  position: absolute;
+  top: 20px;
+  left: 28px;
+  font-size: 40px;
   color: var(--gold);
-  opacity: 0.75;
-  display: block;
-  line-height: 0.7;
+  opacity: 0.5;
+  line-height: 1;
 }
 .ps-text {
   text-align: center;
-  font-size: clamp(16px, 2vw, 19px);
-  color: var(--white-80);
-  line-height: 1.75;
-  flex-shrink: 0;
+  font-size: clamp(20px, 2.5vw, 26px);
+  color: rgba(255,255,255,0.92);
+  line-height: 1.8;
+  font-style: italic;
+  font-weight: 300;
+  width: 100%;
 }
-.ps-text strong { color: var(--gold-light); font-weight: 700; }
 
 /* ── INSIGHT SECTION ────────────────────────────── */
 .insight-section {
@@ -1522,7 +1517,7 @@ a.footer-map-link:hover .footer-map-badge {
 
   /* ── Problem ── */
   .problem-cards { grid-template-columns: 1fr; }
-  .ps-text { font-size: 15px; }
+  .ps-text { font-size: 20px; }
   .problem-statement { padding: 0; }
   .ps-quote-box { padding: 28px 32px; gap: 20px; border-radius: var(--radius-lg); }
 
@@ -1595,7 +1590,7 @@ a.footer-map-link:hover .footer-map-badge {
 
   /* ── Problem quote ── */
   .ps-quote-box { padding: 24px 20px; gap: 14px; }
-  .ps-quote-mark span { font-size: 28px; }
+  .ps-quote-icon { font-size: 32px; top: 14px; left: 18px; }
 
   /* ── Timeline ── */
   .timeline-content { padding: 24px 20px; }
