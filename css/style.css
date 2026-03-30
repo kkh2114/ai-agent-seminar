@@ -1558,9 +1558,17 @@ a.footer-map-link:hover .footer-map-badge {
   .cta-buttons { flex-direction: column; align-items: center; }
   .cta-btn-main, .cta-btn-sub { width: 100%; max-width: 320px; justify-content: center; }
 
-  /* ── Footer ── */
+  /* ── Footer — 모바일에서도 PC처럼 가로 배치 ── */
   .footer-brand { max-width: 100%; }
-  .footer-links { flex-direction: column; gap: 28px; }
+  .footer-links { flex-direction: row; flex-wrap: wrap; gap: 20px; }
+  .footer-links .fl-group { flex: 1; min-width: 0; }
+  .footer-links .fl-group h4 { font-size: 11px; margin-bottom: 6px; }
+  .footer-links .fl-group a,
+  .footer-links .fl-group p { font-size: 11px; line-height: 1.5; }
+  .footer-contact-info { font-size: 11px; gap: 6px; }
+  .footer-contact-info i { font-size: 10px; }
+  a.footer-map-link span { font-size: 11px; }
+  .footer-map-badge { font-size: 9px; padding: 2px 6px; }
   .footer-bottom { flex-direction: column; text-align: center; gap: 8px; }
 
   /* ── Modal ── */
@@ -1618,11 +1626,18 @@ a.footer-map-link:hover .footer-map-badge {
   .cta-desc { font-size: 14px; }
   .cta-btn-main { font-size: 15px; padding: 15px 28px; }
   .cta-btn-sub { font-size: 14px; padding: 14px 24px; }
-  /* ── Footer ── */
-  .footer { padding: 56px 0 32px; }
-  .fl-group h4 { font-size: 11px; }
-  .footer-event-name { font-size: 12px; }
-  .footer-copy { font-size: 11px; }
+  /* ── Footer — 소형 모바일에서도 가로 유지 ── */
+  .footer { padding: 40px 0 24px; }
+  .footer-links { flex-direction: row; flex-wrap: wrap; gap: 14px; }
+  .footer-links .fl-group { flex: 1; min-width: 0; }
+  .footer-links .fl-group h4 { font-size: 10px; }
+  .footer-links .fl-group a,
+  .footer-links .fl-group p { font-size: 10px; }
+  .footer-contact-info { font-size: 10px; }
+  a.footer-map-link span { font-size: 10px; }
+  .footer-map-badge { font-size: 8px; }
+  .footer-event-name { font-size: 11px; }
+  .footer-copy { font-size: 10px; }
 
   /* ── Modal ── */
   .modal-box { padding: 24px 16px; border-radius: var(--radius-lg); }
