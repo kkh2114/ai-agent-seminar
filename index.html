@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Agent 세계 들여다 보기 | 경영자 대상 AI 세미나</title>
+  <meta name="description" content="검색의 시대를 넘어 에이전트 시대로. 경영자를 위한 AI 조직 설계 세미나. 2026.4.7 18:00 | 바톤터치 클로버 셀" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVIGATION
+  ============================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">바톤터치 <em>클로버</em> 셀</span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#problem">문제의식</a>
+        <a href="#insight">인사이트</a>
+        <a href="#speaker">강사</a>
+        <a href="#audience">참가 대상</a>
+        <a href="#cta" class="nav-cta-btn">세미나 신청</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================
+       HERO SECTION
+  ============================= -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-gradient"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>2026. 4. 7 (화) · 오후 6시 &nbsp;|&nbsp; 바이텍시스템, 판교 B동 1102호</span>
+      </div>
+
+      <h1 class="hero-headline">
+        <span class="line-sub">검색의 시대는</span>
+        <span class="line-main">끝났습니다.</span>
+      </h1>
+
+      <p class="hero-sub">
+        이제 AI는 정보를 찾는 도구가 아닙니다.<br />
+        <strong>일을 수행하는 에이전트</strong>로 진화하고 있습니다.
+      </p>
+
+      <p class="hero-desc">
+        당신의 조직은 그 변화에 대비하고 있습니까?
+      </p>
+
+      <div class="hero-event-info">
+        <div class="hero-info-item">
+          <i class="fa-regular fa-calendar"></i>
+          <span>2026. 4. 7 (화) 오후 6:00</span>
+        </div>
+        <a class="hero-info-item hero-info-map" href="https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EB%B6%84%EB%8B%B9%EA%B5%AC%20%EB%8C%80%EC%99%95%ED%8C%90%EA%B5%90%EB%A1%9C%20660" target="_blank" rel="noopener">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>
+            <strong>바이텍시스템</strong><br />
+            경기 성남시 분당구<br />대왕판교로 660<br />B동 1102호
+          </span>
+          <i class="fa-solid fa-arrow-up-right-from-square map-ext-icon"></i>
+        </a>
+        <div class="hero-info-item">
+          <i class="fa-solid fa-user-tie"></i>
+          <span>에스유디자인㈜ 김길호 대표</span>
+        </div>
+        <div class="hero-info-item">
+          <i class="fa-solid fa-building"></i>
+          <span>주관 · 바톤터치 클로버 셀</span>
+        </div>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXRLAEyK6FY92VNTyTMs8V33RKP0490ZKsRkpFVwB1oqAbMg/viewform" target="_blank" rel="noopener" class="btn-primary">
+          <span>세미나 신청하기</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#insight" class="btn-secondary">
+          <span>자세히 보기</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>스크롤</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================
+       PROBLEM SECTION
+  ============================= -->
+  <section class="problem-section" id="problem">
+    <div class="container">
+      <div class="section-label">문제의식</div>
+      <h2 class="section-title">
+        AI를 도입했는데,<br />
+        <em>왜 성과가 나지 않을까요?</em>
+      </h2>
+      <p class="section-lead">
+        많은 기업이 AI 도구를 쓰고 있습니다.<br />
+        그러나 '사용'과 '활용'은 전혀 다릅니다.
+      </p>
+
+      <div class="problem-cards">
+        <div class="prob-card">
+          <div class="prob-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <h3>검색·요약 수준에 머무는 활용</h3>
+          <p>ChatGPT로 문서 요약하고, 검색 대용으로 쓰는 것이 전부. 경쟁 우위가 될 수 없습니다.</p>
+        </div>
+        <div class="prob-card">
+          <div class="prob-icon"><i class="fa-solid fa-toolbox"></i></div>
+          <h3>툴 선택에 집중된 의사결정</h3>
+          <p>"어떤 AI 툴을 쓸까?"를 묻는 순간, 이미 방향이 잘못됐습니다. 툴보다 역할이 먼저입니다.</p>
+        </div>
+        <div class="prob-card">
+          <div class="prob-icon"><i class="fa-solid fa-users-slash"></i></div>
+          <h3>실무자에게만 맡긴 도입</h3>
+          <p>경영자가 AI를 이해하지 못한 상태에서 도입하면, 조직은 방향을 잃습니다.</p>
+        </div>
+        <div class="prob-card">
+          <div class="prob-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>가공 없는 AI 사용</h3>
+          <p>AI의 진짜 가치는 가공에서 나옵니다. 무엇을 어떻게 가공하고, 어떤 역할을 맡길지 설계되지 않으면 AI는 그저 비용입니다.</p>
+        </div>
+      </div>
+
+      <div class="problem-statement">
+        <div class="ps-quote-box">
+          <div class="ps-quote-mark">
+            <span>&#8220;</span><span>&#8220;</span>
+          </div>
+          <p class="ps-text">
+            AI 도입 실패의 원인은 대부분<br />
+            <strong>기술이 아니라 경영자의 이해 부재</strong>입니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       INSIGHT SECTION
+  ============================= -->
+  <section class="insight-section" id="insight">
+    <div class="insight-bg-grid"></div>
+    <div class="container">
+      <div class="section-label light">패러다임 전환</div>
+      <h2 class="section-title light">
+        검색의 시대를 넘어<br />
+        <em>에이전트 시대로</em>
+      </h2>
+
+      <div class="insight-timeline">
+        <div class="timeline-item left" data-aos="fade-right">
+          <div class="timeline-content">
+            <div class="tl-era past">검색의 시대</div>
+            <h3>AI에게 묻는다</h3>
+            <p>정보를 요청하고, 답변을 받고, 사람이 판단한다. AI는 도구다.</p>
+            <ul>
+              <li>질문에 대한 답변 생성</li>
+              <li>문서 요약 및 번역</li>
+              <li>단순 자동화</li>
+            </ul>
+          </div>
+          <div class="timeline-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="timeline-divider">
+          <div class="td-line"></div>
+          <div class="td-badge">NOW</div>
+          <div class="td-line"></div>
+        </div>
+
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="timeline-arrow left-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+          <div class="timeline-content">
+            <div class="tl-era now">에이전트의 시대</div>
+            <h3>AI가 일한다</h3>
+            <p>목표를 부여하면, AI가 스스로 판단하고 실행하며 결과를 만든다. AI는 조직이다.</p>
+            <ul>
+              <li>목표 기반 자율 실행</li>
+              <li>멀티 에이전트 협업</li>
+              <li>역할 설계 기반 조직화</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       SEMINAR VALUE SECTION
+  ============================= -->
+  <section class="value-section" id="value">
+    <div class="container">
+      <div class="section-label">세미나 가치</div>
+      <h2 class="section-title">
+        이번 세미나에서<br />
+        <em>무엇을 얻게 됩니까?</em>
+      </h2>
+      <p class="section-lead">
+        툴 사용법 강의가 아닙니다.<br />
+        경영자의 시야를 바꾸는 시간입니다.
+      </p>
+
+      <div class="value-grid">
+        <div class="value-item">
+          <div class="vi-icon">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <div class="vi-content">
+            <h3>에이전트 시대의 전체 그림</h3>
+            <p>AI가 지금 어디까지 왔는지, 앞으로 어디로 가는지 — 경영자 관점의 지형도를 갖게 됩니다.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="vi-icon">
+            <i class="fa-solid fa-sitemap"></i>
+          </div>
+          <div class="vi-content">
+            <h3>조직 설계 관점의 AI 이해</h3>
+            <p>"어떤 툴을 쓸까"가 아니라 "AI에게 어떤 역할을 맡길까"로 질문 자체가 바뀝니다.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="vi-icon">
+            <i class="fa-solid fa-filter"></i>
+          </div>
+          <div class="vi-content">
+            <h3>'가공'의 개념과 실제 적용</h3>
+            <p>정보를 어떻게 가공하고, 어떤 형태로 AI에게 맡기는지 — 실제 사례 중심으로 설명합니다.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="vi-icon">
+            <i class="fa-solid fa-chess-king"></i>
+          </div>
+          <div class="vi-content">
+            <h3>경영자가 직접 판단할 수 있는 기준</h3>
+            <p>전문가에게 맡기기 전에, 경영자 스스로 AI 도입의 방향을 판단할 수 있는 기준을 얻게 됩니다.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="vi-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <div class="vi-content">
+            <h3>즉시 대화에 쓸 수 있는 언어</h3>
+            <p>세미나 다음 날부터 팀과의 AI 논의에서 방향을 제시할 수 있는 언어와 개념을 가져갑니다.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="vi-icon">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <div class="vi-content">
+            <h3>같은 고민을 가진 경영자들과의 교류</h3>
+            <p>같은 문제의식을 가진 경영자·임원들이 모이는 자리입니다. 논의 자체가 가치입니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="value-quote">
+        <blockquote>
+          "경영자는 AI를 이해한 가운데 조직에 도입해야 합니다.<br />
+          이해 없는 도입은 혼란만 남깁니다."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       SPEAKER SECTION
+  ============================= -->
+  <section class="speaker-section" id="speaker">
+    <div class="speaker-bg"></div>
+    <div class="container">
+      <div class="section-label light">강사 소개</div>
+      <div class="speaker-inner">
+        <div class="speaker-visual">
+          <div class="speaker-img-wrap">
+            <div class="speaker-img-photo">
+              <img src="images/speaker.jpg" alt="에스유디자인㈜ 김길호 대표" />
+              <div class="sp-photo-overlay"></div>
+            </div>
+            <div class="speaker-name-badge">
+              <strong>김길호</strong>
+              <span>에스유디자인㈜ 대표</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="speaker-info">
+          <h2 class="speaker-title">
+            현업과 경영의 문제를<br />
+            <em>AI 관점에서 연결하는 강사</em>
+          </h2>
+          <div class="speaker-profile">
+            <p>
+              에스유디자인㈜ 대표 김길호는 현장에서 실제 비즈니스 문제를 다루는 경영자입니다.
+              단순히 AI 기술을 소개하는 것이 아니라, 조직이 AI를 어떻게 이해하고 도입해야
+              하는지를 경영자의 언어로 설명합니다.
+            </p>
+            <p>
+              "AI를 모르는 경영자가 도입을 결정하면, 조직은 방향 없이 흔들린다." —
+              이 문제의식에서 출발한 강의는, 기술 소개보다 <strong>경영자의 판단력</strong>을
+              키우는 데 집중합니다.
+            </p>
+          </div>
+
+          <div class="speaker-tags">
+            <span class="stag">AI 조직 설계</span>
+            <span class="stag">에이전트 전략</span>
+            <span class="stag">경영자 AI 리터러시</span>
+            <span class="stag">디지털 전환</span>
+          </div>
+
+          <div class="speaker-org">
+            <div class="sorg-item">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>에스유디자인㈜ 대표이사</span>
+            </div>
+            <div class="sorg-item">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <span>바톤터치 클로버 셀 세미나 강사</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       AUDIENCE SECTION
+  ============================= -->
+  <section class="audience-section" id="audience">
+    <div class="container">
+      <div class="section-label">참가 대상</div>
+      <h2 class="section-title">
+        이런 분께<br />
+        <em>추천합니다</em>
+      </h2>
+
+      <div class="audience-grid">
+        <div class="aud-card recommended">
+          <div class="aud-check"><i class="fa-solid fa-check"></i></div>
+          <h3>중소·중견기업 대표</h3>
+          <p>AI 도입 방향을 직접 결정해야 하는 경영자. 어디서부터 시작해야 할지 막막한 분.</p>
+        </div>
+        <div class="aud-card recommended">
+          <div class="aud-check"><i class="fa-solid fa-check"></i></div>
+          <h3>임원 및 의사결정자</h3>
+          <p>AI 관련 보고를 받고 판단해야 하는 위치. 기술이 아닌 경영 관점의 이해가 필요한 분.</p>
+        </div>
+        <div class="aud-card recommended">
+          <div class="aud-check"><i class="fa-solid fa-check"></i></div>
+          <h3>조직 운영 책임자</h3>
+          <p>팀과 조직의 업무 방식에 AI를 어떻게 연결할지 고민하는 분.</p>
+        </div>
+        <div class="aud-card recommended">
+          <div class="aud-check"><i class="fa-solid fa-check"></i></div>
+          <h3>AI 도입을 고민 중인 리더</h3>
+          <p>필요성은 느끼지만, 방향을 잡지 못하고 있는 분. 실무자 교육 전에 경영자 스스로 먼저 이해하고 싶은 분.</p>
+        </div>
+      </div>
+
+      <div class="not-audience">
+        <div class="na-label"><i class="fa-solid fa-circle-info"></i> 이런 분께는 맞지 않습니다</div>
+        <div class="na-items">
+          <span><i class="fa-solid fa-xmark"></i> AI 툴 사용법을 배우고 싶은 실무자</span>
+          <span><i class="fa-solid fa-xmark"></i> 개발·기술 구현을 배우려는 분</span>
+          <span><i class="fa-solid fa-xmark"></i> 이미 AI 전략을 완성한 조직</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CTA SECTION
+  ============================= -->
+  <section class="cta-section" id="cta">
+    <div class="cta-bg">
+      <canvas id="ctaCanvas"></canvas>
+      <div class="cta-gradient"></div>
+    </div>
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-badge">
+          <span class="badge-dot gold"></span>
+          <span>선착순 참가 · 무료 세미나</span>
+        </div>
+
+        <h2 class="cta-title">
+          AI가 조직을 바꾸기 전에,<br />
+          <em>경영자가 먼저 이해해야 합니다.</em>
+        </h2>
+
+        <p class="cta-desc">
+          단 두 시간의 시간 투자로,<br />
+          AI 도입의 방향과 기준을 손에 쥐고 돌아가십시오.
+        </p>
+
+        <div class="cta-date-strip">
+          <div class="cds-item">
+            <i class="fa-regular fa-calendar"></i>
+            <span>2026. 4. 7 (화) · 오후 6:00</span>
+          </div>
+          <div class="cds-divider"></div>
+          <a class="cds-item cds-map-link" href="https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EB%B6%84%EB%8B%B9%EA%B5%AC%20%EB%8C%80%EC%99%95%ED%8C%90%EA%B5%90%EB%A1%9C%20660" target="_blank" rel="noopener">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>
+              바이텍시스템<br />
+              <small>경기 성남시 분당구 대왕판교로 660, B동 1102호</small>
+            </span>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:10px; opacity:0.5;"></i>
+          </a>
+          <div class="cds-divider"></div>
+          <div class="cds-item">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>김길호 대표 · 에스유디자인㈜</span>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXRLAEyK6FY92VNTyTMs8V33RKP0490ZKsRkpFVwB1oqAbMg/viewform" target="_blank" rel="noopener" class="cta-btn-main">
+            <span>지금 신청하기</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button class="cta-btn-sub" onclick="openModal('inquiry')">
+            <span>문의하기</span>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-dot"></span>
+            <span class="logo-text">바톤터치 <em>클로버</em> 셀</span>
+          </div>
+          <p class="footer-tagline">검색의 시대를 넘어, 에이전트 시대를 준비합니다.</p>
+        </div>
+        <div class="footer-links">
+          <div class="fl-group">
+            <h4>세미나 안내</h4>
+            <a href="#problem">문제의식</a>
+            <a href="#insight">인사이트</a>
+            <a href="#value">세미나 가치</a>
+            <a href="#speaker">강사 소개</a>
+          </div>
+          <div class="fl-group">
+            <h4>참가 안내</h4>
+            <a href="#audience">참가 대상</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXRLAEyK6FY92VNTyTMs8V33RKP0490ZKsRkpFVwB1oqAbMg/viewform" target="_blank" rel="noopener">신청하기</a>
+            <a href="#cta" onclick="openModal('inquiry'); return false;">문의하기</a>
+          </div>
+          <div class="fl-group">
+            <h4>문의</h4>
+            <a class="footer-contact-info footer-map-link" href="https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EB%B6%84%EB%8B%B9%EA%B5%AC%20%EB%8C%80%EC%99%95%ED%8C%90%EA%B5%90%EB%A1%9C%20660" target="_blank" rel="noopener">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>
+                바이텍시스템<br />
+                경기 성남시 분당구<br />
+                대왕판교로 660<br />
+                B동 1102호
+                <span class="footer-map-badge"><i class="fa-solid fa-map-location-dot"></i> 네이버 지도 보기</span>
+              </span>
+            </a>
+            <p class="footer-contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:sudesigmgo@gmail.com" style="color:inherit; text-decoration:none;">sudesigmgo@gmail.com</a>
+            </p>
+            <p class="footer-contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <span>담당자 연락처 (추후 공개)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-event-name">AI Agent 세계 들여다 보기 — 경영자 AI 세미나</p>
+        <p class="footer-copy">© 2026 바톤터치 클로버 셀. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================
+       MODALS
+  ============================= -->
+  <!-- Inquiry Modal -->
+  <div class="modal-overlay" id="inquiryModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('inquiry')"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <div class="modal-icon inquiry-icon"><i class="fa-regular fa-envelope"></i></div>
+        <h3>문의하기</h3>
+        <p>세미나 관련 궁금하신 사항을<br />남겨주시면 답변드리겠습니다.</p>
+      </div>
+      <div class="inquiry-email-direct">
+        <a href="mailto:sudesigmgo@gmail.com" class="direct-mail-btn">
+          <i class="fa-regular fa-envelope"></i>
+          <span>
+            <small>이메일로 직접 문의</small>
+            sudesigmgo@gmail.com
+          </span>
+          <i class="fa-solid fa-arrow-up-right-from-square ext-icon"></i>
+        </a>
+      </div>
+      <div class="inquiry-divider"><span>또는 아래 양식으로 문의</span></div>
+      <form class="modal-form" id="inquiryForm" onsubmit="submitForm(event, 'inquiry')">
+        <div class="form-group">
+          <label>성함 <span class="req">*</span></label>
+          <input type="text" name="name" placeholder="홍길동" required />
+        </div>
+        <div class="form-group">
+          <label>연락처 또는 이메일 <span class="req">*</span></label>
+          <input type="text" name="contact" placeholder="010-0000-0000 또는 email@company.com" required />
+        </div>
+        <div class="form-group">
+          <label>문의 내용 <span class="req">*</span></label>
+          <textarea name="message" placeholder="문의하실 내용을 입력해 주세요." rows="4" required></textarea>
+        </div>
+        <button type="submit" class="form-submit-btn">
+          <span>문의 보내기</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Toast -->
+  <div class="toast" id="successToast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">신청이 완료되었습니다.</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
