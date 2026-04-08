@@ -27,7 +27,7 @@
         <a href="#insight">인사이트</a>
         <a href="#speaker">강사</a>
         <a href="#audience">참가 대상</a>
-        <a href="#cta" class="nav-cta-btn">세미나 신청</a>
+        <a href="#cta" class="nav-cta-btn" onclick="event.preventDefault(); alert('신청기간이 끝났습니다.')">세미나 신청</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="메뉴">
         <span></span><span></span><span></span>
@@ -88,10 +88,10 @@
       </div>
 
       <div class="hero-cta-group">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXRLAEyK6FY92VNTyTMs8V33RKP0490ZKsRkpFVwB1oqAbMg/viewform" target="_blank" rel="noopener" class="btn-primary">
+        <button type="button" class="btn-primary" onclick="alert('신청기간이 끝났습니다.')">
           <span>세미나 신청하기</span>
           <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        </button>
         <a href="#insight" class="btn-secondary">
           <span>자세히 보기</span>
         </a>
@@ -439,10 +439,10 @@
         </div>
 
         <div class="cta-buttons">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXRLAEyK6FY92VNTyTMs8V33RKP0490ZKsRkpFVwB1oqAbMg/viewform" target="_blank" rel="noopener" class="cta-btn-main">
+          <button type="button" class="cta-btn-main" onclick="alert('신청기간이 끝났습니다.')">
             <span>지금 신청하기</span>
             <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          </button>
           <button class="cta-btn-sub" onclick="openModal('inquiry')">
             <span>문의하기</span>
             <i class="fa-regular fa-envelope"></i>
@@ -477,7 +477,7 @@
           <div class="fl-group">
             <h4>참가 안내</h4>
             <a href="#audience">참가 대상</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXRLAEyK6FY92VNTyTMs8V33RKP0490ZKsRkpFVwB1oqAbMg/viewform" target="_blank" rel="noopener">신청하기</a>
+            <a href="#" onclick="event.preventDefault(); alert('신청기간이 끝났습니다.')">신청하기</a>
             <a href="#cta" onclick="openModal('inquiry'); return false;">문의하기</a>
           </div>
           <div class="fl-group">
